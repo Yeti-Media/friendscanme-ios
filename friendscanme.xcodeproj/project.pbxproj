@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B26287F015E40CED00E2DC85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26287EF15E40CED00E2DC85 /* UIKit.framework */; };
+		B26287F215E40CED00E2DC85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26287F115E40CED00E2DC85 /* Foundation.framework */; };
+		B26287F415E40CED00E2DC85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26287F315E40CED00E2DC85 /* CoreGraphics.framework */; };
+		B26287FA15E40CED00E2DC85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B26287F815E40CED00E2DC85 /* InfoPlist.strings */; };
+		B26287FC15E40CED00E2DC85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B26287FB15E40CED00E2DC85 /* main.m */; };
+		B262880015E40CED00E2DC85 /* FSMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B26287FF15E40CED00E2DC85 /* FSMAppDelegate.m */; };
+		B262880315E40CED00E2DC85 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B262880115E40CED00E2DC85 /* MainStoryboard.storyboard */; };
+		B262880615E40CED00E2DC85 /* FSMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B262880515E40CED00E2DC85 /* FSMViewController.m */; };
+		B262880E15E40CEE00E2DC85 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B262880D15E40CEE00E2DC85 /* SenTestingKit.framework */; };
+		B262880F15E40CEE00E2DC85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26287EF15E40CED00E2DC85 /* UIKit.framework */; };
+		B262881015E40CEE00E2DC85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26287F115E40CED00E2DC85 /* Foundation.framework */; };
+		B262881815E40CEE00E2DC85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B262881615E40CEE00E2DC85 /* InfoPlist.strings */; };
+		B262881B15E40CEE00E2DC85 /* friendscanmeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B262881A15E40CEE00E2DC85 /* friendscanmeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B262881115E40CEE00E2DC85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B26287E215E40CED00E2DC85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B26287EA15E40CED00E2DC85;
+			remoteInfo = friendscanme;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B26287EB15E40CED00E2DC85 /* friendscanme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = friendscanme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26287EF15E40CED00E2DC85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B26287F115E40CED00E2DC85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B26287F315E40CED00E2DC85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B26287F715E40CED00E2DC85 /* friendscanme-Info.plist */ = {isa = PBXFileReference; path = "friendscanme-Info.plist"; sourceTree = "<group>"; };
+		B26287F915E40CED00E2DC85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B26287FB15E40CED00E2DC85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B26287FD15E40CED00E2DC85 /* friendscanme-Prefix.pch */ = {isa = PBXFileReference; path = "friendscanme-Prefix.pch"; sourceTree = "<group>"; };
+		B26287FE15E40CED00E2DC85 /* FSMAppDelegate.h */ = {isa = PBXFileReference; path = FSMAppDelegate.h; sourceTree = "<group>"; };
+		B26287FF15E40CED00E2DC85 /* FSMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSMAppDelegate.m; sourceTree = "<group>"; };
+		B262880215E40CED00E2DC85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B262880415E40CED00E2DC85 /* FSMViewController.h */ = {isa = PBXFileReference; path = FSMViewController.h; sourceTree = "<group>"; };
+		B262880515E40CED00E2DC85 /* FSMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSMViewController.m; sourceTree = "<group>"; };
+		B262880C15E40CEE00E2DC85 /* friendscanmeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = friendscanmeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B262880D15E40CEE00E2DC85 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B262881515E40CEE00E2DC85 /* friendscanmeTests-Info.plist */ = {isa = PBXFileReference; path = "friendscanmeTests-Info.plist"; sourceTree = "<group>"; };
+		B262881715E40CEE00E2DC85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B262881915E40CEE00E2DC85 /* friendscanmeTests.h */ = {isa = PBXFileReference; path = friendscanmeTests.h; sourceTree = "<group>"; };
+		B262881A15E40CEE00E2DC85 /* friendscanmeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = friendscanmeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B26287E815E40CED00E2DC85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26287F015E40CED00E2DC85 /* UIKit.framework in Frameworks */,
+				B26287F215E40CED00E2DC85 /* Foundation.framework in Frameworks */,
+				B26287F415E40CED00E2DC85 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B262880815E40CEE00E2DC85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B262880E15E40CEE00E2DC85 /* SenTestingKit.framework in Frameworks */,
+				B262880F15E40CEE00E2DC85 /* UIKit.framework in Frameworks */,
+				B262881015E40CEE00E2DC85 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B26287E015E40CED00E2DC85 = {
+			isa = PBXGroup;
+			children = (
+				B26287F515E40CED00E2DC85 /* friendscanme */,
+				B262881315E40CEE00E2DC85 /* friendscanmeTests */,
+				B26287EE15E40CED00E2DC85 /* Frameworks */,
+				B26287EC15E40CED00E2DC85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B26287EC15E40CED00E2DC85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B26287EB15E40CED00E2DC85 /* friendscanme.app */,
+				B262880C15E40CEE00E2DC85 /* friendscanmeTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B26287EE15E40CED00E2DC85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B26287EF15E40CED00E2DC85 /* UIKit.framework */,
+				B26287F115E40CED00E2DC85 /* Foundation.framework */,
+				B26287F315E40CED00E2DC85 /* CoreGraphics.framework */,
+				B262880D15E40CEE00E2DC85 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B26287F515E40CED00E2DC85 /* friendscanme */ = {
+			isa = PBXGroup;
+			children = (
+				B26287FE15E40CED00E2DC85 /* FSMAppDelegate.h */,
+				B26287FF15E40CED00E2DC85 /* FSMAppDelegate.m */,
+				B262880115E40CED00E2DC85 /* MainStoryboard.storyboard */,
+				B262880415E40CED00E2DC85 /* FSMViewController.h */,
+				B262880515E40CED00E2DC85 /* FSMViewController.m */,
+				B26287F615E40CED00E2DC85 /* Supporting Files */,
+			);
+			path = friendscanme;
+			sourceTree = "<group>";
+		};
+		B26287F615E40CED00E2DC85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B26287F715E40CED00E2DC85 /* friendscanme-Info.plist */,
+				B26287F815E40CED00E2DC85 /* InfoPlist.strings */,
+				B26287FB15E40CED00E2DC85 /* main.m */,
+				B26287FD15E40CED00E2DC85 /* friendscanme-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B262881315E40CEE00E2DC85 /* friendscanmeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B262881915E40CEE00E2DC85 /* friendscanmeTests.h */,
+				B262881A15E40CEE00E2DC85 /* friendscanmeTests.m */,
+				B262881415E40CEE00E2DC85 /* Supporting Files */,
+			);
+			path = friendscanmeTests;
+			sourceTree = "<group>";
+		};
+		B262881415E40CEE00E2DC85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B262881515E40CEE00E2DC85 /* friendscanmeTests-Info.plist */,
+				B262881615E40CEE00E2DC85 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B26287EA15E40CED00E2DC85 /* friendscanme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B262881E15E40CEE00E2DC85 /* Build configuration list for PBXNativeTarget "friendscanme" */;
+			buildPhases = (
+				B26287E715E40CED00E2DC85 /* Sources */,
+				B26287E815E40CED00E2DC85 /* Frameworks */,
+				B26287E915E40CED00E2DC85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = friendscanme;
+			productName = friendscanme;
+			productReference = B26287EB15E40CED00E2DC85 /* friendscanme.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B262880B15E40CEE00E2DC85 /* friendscanmeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B262882115E40CEE00E2DC85 /* Build configuration list for PBXNativeTarget "friendscanmeTests" */;
+			buildPhases = (
+				B262880715E40CEE00E2DC85 /* Sources */,
+				B262880815E40CEE00E2DC85 /* Frameworks */,
+				B262880915E40CEE00E2DC85 /* Resources */,
+				B262880A15E40CEE00E2DC85 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B262881215E40CEE00E2DC85 /* PBXTargetDependency */,
+			);
+			name = friendscanmeTests;
+			productName = friendscanmeTests;
+			productReference = B262880C15E40CEE00E2DC85 /* friendscanmeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B26287E215E40CED00E2DC85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FSM;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Yeti Media";
+			};
+			buildConfigurationList = B26287E515E40CED00E2DC85 /* Build configuration list for PBXProject "friendscanme" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B26287E015E40CED00E2DC85;
+			productRefGroup = B26287EC15E40CED00E2DC85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B26287EA15E40CED00E2DC85 /* friendscanme */,
+				B262880B15E40CEE00E2DC85 /* friendscanmeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B26287E915E40CED00E2DC85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26287FA15E40CED00E2DC85 /* InfoPlist.strings in Resources */,
+				B262880315E40CED00E2DC85 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B262880915E40CEE00E2DC85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B262881815E40CEE00E2DC85 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B262880A15E40CEE00E2DC85 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B26287E715E40CED00E2DC85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26287FC15E40CED00E2DC85 /* main.m in Sources */,
+				B262880015E40CED00E2DC85 /* FSMAppDelegate.m in Sources */,
+				B262880615E40CED00E2DC85 /* FSMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B262880715E40CEE00E2DC85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B262881B15E40CEE00E2DC85 /* friendscanmeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B262881215E40CEE00E2DC85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B26287EA15E40CED00E2DC85 /* friendscanme */;
+			targetProxy = B262881115E40CEE00E2DC85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B26287F815E40CED00E2DC85 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B26287F915E40CED00E2DC85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B262880115E40CED00E2DC85 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B262880215E40CED00E2DC85 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		B262881615E40CEE00E2DC85 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B262881715E40CEE00E2DC85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B262881C15E40CEE00E2DC85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B262881D15E40CEE00E2DC85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B262881F15E40CEE00E2DC85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "friendscanme/friendscanme-Prefix.pch";
+				INFOPLIST_FILE = "friendscanme/friendscanme-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B262882015E40CEE00E2DC85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "friendscanme/friendscanme-Prefix.pch";
+				INFOPLIST_FILE = "friendscanme/friendscanme-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B262882215E40CEE00E2DC85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/friendscanme.app/friendscanme";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "friendscanme/friendscanme-Prefix.pch";
+				INFOPLIST_FILE = "friendscanmeTests/friendscanmeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B262882315E40CEE00E2DC85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/friendscanme.app/friendscanme";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "friendscanme/friendscanme-Prefix.pch";
+				INFOPLIST_FILE = "friendscanmeTests/friendscanmeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B26287E515E40CED00E2DC85 /* Build configuration list for PBXProject "friendscanme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B262881C15E40CEE00E2DC85 /* Debug */,
+				B262881D15E40CEE00E2DC85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B262881E15E40CEE00E2DC85 /* Build configuration list for PBXNativeTarget "friendscanme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B262881F15E40CEE00E2DC85 /* Debug */,
+				B262882015E40CEE00E2DC85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B262882115E40CEE00E2DC85 /* Build configuration list for PBXNativeTarget "friendscanmeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B262882215E40CEE00E2DC85 /* Debug */,
+				B262882315E40CEE00E2DC85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B26287E215E40CED00E2DC85 /* Project object */;
+}
