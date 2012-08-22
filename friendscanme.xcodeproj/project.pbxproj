@@ -20,6 +20,12 @@
 		B262881015E40CEE00E2DC85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26287F115E40CED00E2DC85 /* Foundation.framework */; };
 		B262881815E40CEE00E2DC85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B262881615E40CEE00E2DC85 /* InfoPlist.strings */; };
 		B262881B15E40CEE00E2DC85 /* friendscanmeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B262881A15E40CEE00E2DC85 /* friendscanmeTests.m */; };
+		B262882515E40D5100E2DC85 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B262882415E40D5100E2DC85 /* FacebookSDK.framework */; };
+		B262882715E40D7000E2DC85 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B262882615E40D7000E2DC85 /* FacebookSDKResources.bundle */; };
+		B262883215E45DFF00E2DC85 /* bg-starburst.png in Resources */ = {isa = PBXBuildFile; fileRef = B262883015E45DFF00E2DC85 /* bg-starburst.png */; };
+		B262883315E45DFF00E2DC85 /* bg-starburst@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B262883115E45DFF00E2DC85 /* bg-starburst@2x.png */; };
+		B262883915E4602500E2DC85 /* FSMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B262883515E4602400E2DC85 /* FSMUser.m */; };
+		B262883A15E4602500E2DC85 /* FSMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B262883815E4602400E2DC85 /* FSMDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +43,30 @@
 		B26287EF15E40CED00E2DC85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B26287F115E40CED00E2DC85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B26287F315E40CED00E2DC85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B26287F715E40CED00E2DC85 /* friendscanme-Info.plist */ = {isa = PBXFileReference; path = "friendscanme-Info.plist"; sourceTree = "<group>"; };
+		B26287F715E40CED00E2DC85 /* friendscanme-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "friendscanme-Info.plist"; sourceTree = "<group>"; };
 		B26287F915E40CED00E2DC85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B26287FB15E40CED00E2DC85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B26287FD15E40CED00E2DC85 /* friendscanme-Prefix.pch */ = {isa = PBXFileReference; path = "friendscanme-Prefix.pch"; sourceTree = "<group>"; };
-		B26287FE15E40CED00E2DC85 /* FSMAppDelegate.h */ = {isa = PBXFileReference; path = FSMAppDelegate.h; sourceTree = "<group>"; };
+		B26287FD15E40CED00E2DC85 /* friendscanme-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "friendscanme-Prefix.pch"; sourceTree = "<group>"; };
+		B26287FE15E40CED00E2DC85 /* FSMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSMAppDelegate.h; sourceTree = "<group>"; };
 		B26287FF15E40CED00E2DC85 /* FSMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSMAppDelegate.m; sourceTree = "<group>"; };
 		B262880215E40CED00E2DC85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		B262880415E40CED00E2DC85 /* FSMViewController.h */ = {isa = PBXFileReference; path = FSMViewController.h; sourceTree = "<group>"; };
+		B262880415E40CED00E2DC85 /* FSMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSMViewController.h; sourceTree = "<group>"; };
 		B262880515E40CED00E2DC85 /* FSMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSMViewController.m; sourceTree = "<group>"; };
 		B262880C15E40CEE00E2DC85 /* friendscanmeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = friendscanmeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B262880D15E40CEE00E2DC85 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		B262881515E40CEE00E2DC85 /* friendscanmeTests-Info.plist */ = {isa = PBXFileReference; path = "friendscanmeTests-Info.plist"; sourceTree = "<group>"; };
+		B262881515E40CEE00E2DC85 /* friendscanmeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "friendscanmeTests-Info.plist"; sourceTree = "<group>"; };
 		B262881715E40CEE00E2DC85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B262881915E40CEE00E2DC85 /* friendscanmeTests.h */ = {isa = PBXFileReference; path = friendscanmeTests.h; sourceTree = "<group>"; };
+		B262881915E40CEE00E2DC85 /* friendscanmeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = friendscanmeTests.h; sourceTree = "<group>"; };
 		B262881A15E40CEE00E2DC85 /* friendscanmeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = friendscanmeTests.m; sourceTree = "<group>"; };
+		B262882415E40D5100E2DC85 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		B262882615E40D7000E2DC85 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		B262883015E45DFF00E2DC85 /* bg-starburst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-starburst.png"; sourceTree = "<group>"; };
+		B262883115E45DFF00E2DC85 /* bg-starburst@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-starburst@2x.png"; sourceTree = "<group>"; };
+		B262883415E4602400E2DC85 /* FSMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMUser.h; sourceTree = "<group>"; };
+		B262883515E4602400E2DC85 /* FSMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMUser.m; sourceTree = "<group>"; };
+		B262883615E4602400E2DC85 /* FSMDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMDataSource.h; sourceTree = "<group>"; };
+		B262883715E4602400E2DC85 /* FSMDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMDetailViewController.h; sourceTree = "<group>"; };
+		B262883815E4602400E2DC85 /* FSMDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +77,7 @@
 				B26287F015E40CED00E2DC85 /* UIKit.framework in Frameworks */,
 				B26287F215E40CED00E2DC85 /* Foundation.framework in Frameworks */,
 				B26287F415E40CED00E2DC85 /* CoreGraphics.framework in Frameworks */,
+				B262882515E40D5100E2DC85 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +116,8 @@
 		B26287EE15E40CED00E2DC85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B262882615E40D7000E2DC85 /* FacebookSDKResources.bundle */,
+				B262882415E40D5100E2DC85 /* FacebookSDK.framework */,
 				B26287EF15E40CED00E2DC85 /* UIKit.framework */,
 				B26287F115E40CED00E2DC85 /* Foundation.framework */,
 				B26287F315E40CED00E2DC85 /* CoreGraphics.framework */,
@@ -111,6 +129,11 @@
 		B26287F515E40CED00E2DC85 /* friendscanme */ = {
 			isa = PBXGroup;
 			children = (
+				B262883415E4602400E2DC85 /* FSMUser.h */,
+				B262883515E4602400E2DC85 /* FSMUser.m */,
+				B262883615E4602400E2DC85 /* FSMDataSource.h */,
+				B262883715E4602400E2DC85 /* FSMDetailViewController.h */,
+				B262883815E4602400E2DC85 /* FSMDetailViewController.m */,
 				B26287FE15E40CED00E2DC85 /* FSMAppDelegate.h */,
 				B26287FF15E40CED00E2DC85 /* FSMAppDelegate.m */,
 				B262880115E40CED00E2DC85 /* MainStoryboard.storyboard */,
@@ -124,6 +147,8 @@
 		B26287F615E40CED00E2DC85 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B262883015E45DFF00E2DC85 /* bg-starburst.png */,
+				B262883115E45DFF00E2DC85 /* bg-starburst@2x.png */,
 				B26287F715E40CED00E2DC85 /* friendscanme-Info.plist */,
 				B26287F815E40CED00E2DC85 /* InfoPlist.strings */,
 				B26287FB15E40CED00E2DC85 /* main.m */,
@@ -225,6 +250,9 @@
 			files = (
 				B26287FA15E40CED00E2DC85 /* InfoPlist.strings in Resources */,
 				B262880315E40CED00E2DC85 /* MainStoryboard.storyboard in Resources */,
+				B262882715E40D7000E2DC85 /* FacebookSDKResources.bundle in Resources */,
+				B262883215E45DFF00E2DC85 /* bg-starburst.png in Resources */,
+				B262883315E45DFF00E2DC85 /* bg-starburst@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B262881B15E40CEE00E2DC85 /* friendscanmeTests.m in Sources */,
+				B262883915E4602500E2DC85 /* FSMUser.m in Sources */,
+				B262883A15E4602500E2DC85 /* FSMDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,9 +387,14 @@
 		B262881F15E40CEE00E2DC85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "friendscanme/friendscanme-Prefix.pch";
 				INFOPLIST_FILE = "friendscanme/friendscanme-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -368,9 +403,14 @@
 		B262882015E40CEE00E2DC85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "friendscanme/friendscanme-Prefix.pch";
 				INFOPLIST_FILE = "friendscanme/friendscanme-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
