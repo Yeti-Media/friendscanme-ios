@@ -25,7 +25,22 @@
 		B262883215E45DFF00E2DC85 /* bg-starburst.png in Resources */ = {isa = PBXBuildFile; fileRef = B262883015E45DFF00E2DC85 /* bg-starburst.png */; };
 		B262883315E45DFF00E2DC85 /* bg-starburst@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B262883115E45DFF00E2DC85 /* bg-starburst@2x.png */; };
 		B262883915E4602500E2DC85 /* FSMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B262883515E4602400E2DC85 /* FSMUser.m */; };
-		B262883A15E4602500E2DC85 /* FSMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B262883815E4602400E2DC85 /* FSMDetailViewController.m */; };
+		B262883B15E5ACD100E2DC85 /* FSMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B262883815E4602400E2DC85 /* FSMDetailViewController.m */; };
+		B262883C15E5AD4E00E2DC85 /* FSMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B262883815E4602400E2DC85 /* FSMDetailViewController.m */; };
+		B262885615E8931300E2DC85 /* fsm-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B262885415E8931300E2DC85 /* fsm-bg.png */; };
+		B262885715E8931300E2DC85 /* fsm-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B262885515E8931300E2DC85 /* fsm-bg@2x.png */; };
+		B262885E15E897FA00E2DC85 /* fsm-login-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B262885C15E897FA00E2DC85 /* fsm-login-logo.png */; };
+		B262885F15E897FA00E2DC85 /* fsm-login-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B262885D15E897FA00E2DC85 /* fsm-login-logo@2x.png */; };
+		B262886615EC43DA00E2DC85 /* fb-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B262886415EC43DA00E2DC85 /* fb-button.png */; };
+		B262886715EC43DA00E2DC85 /* fb-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B262886515EC43DA00E2DC85 /* fb-button@2x.png */; };
+		B2C55EFC15F9511F0015E39F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C55EED15F950640015E39F /* CFNetwork.framework */; };
+		B2C55EFD15F9511F0015E39F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C55EEE15F950640015E39F /* CoreData.framework */; };
+		B2C55EFE15F9511F0015E39F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C55EEF15F950640015E39F /* libxml2.dylib */; };
+		B2C55EFF15F9511F0015E39F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C55EF015F950640015E39F /* MobileCoreServices.framework */; };
+		B2C55F0015F9511F0015E39F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C55EF115F950640015E39F /* QuartzCore.framework */; };
+		B2C55F0115F9511F0015E39F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C55EF215F950640015E39F /* Security.framework */; };
+		B2C55F0215F9511F0015E39F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C55EF315F950640015E39F /* SystemConfiguration.framework */; };
+		B2C55F0715F95C880015E39F /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C55EE015F936D30015E39F /* libRestKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +50,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = B26287EA15E40CED00E2DC85;
 			remoteInfo = friendscanme;
+		};
+		B2C55EDF15F936D30015E39F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2C55ED415F936D30015E39F /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		B2C55EE115F936D30015E39F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2C55ED415F936D30015E39F /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		B2C55EE315F936D30015E39F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2C55ED415F936D30015E39F /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		B2C55EE515F936D30015E39F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2C55ED415F936D30015E39F /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		B2C55EE715F936D30015E39F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2C55ED415F936D30015E39F /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 259C301615128079003066A2;
+			remoteInfo = RestKitResources;
+		};
+		B2C55EE915F94F970015E39F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2C55ED415F936D30015E39F /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -67,6 +124,20 @@
 		B262883615E4602400E2DC85 /* FSMDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMDataSource.h; sourceTree = "<group>"; };
 		B262883715E4602400E2DC85 /* FSMDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMDetailViewController.h; sourceTree = "<group>"; };
 		B262883815E4602400E2DC85 /* FSMDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMDetailViewController.m; sourceTree = "<group>"; };
+		B262885415E8931300E2DC85 /* fsm-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fsm-bg.png"; sourceTree = "<group>"; };
+		B262885515E8931300E2DC85 /* fsm-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fsm-bg@2x.png"; sourceTree = "<group>"; };
+		B262885C15E897FA00E2DC85 /* fsm-login-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fsm-login-logo.png"; sourceTree = "<group>"; };
+		B262885D15E897FA00E2DC85 /* fsm-login-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fsm-login-logo@2x.png"; sourceTree = "<group>"; };
+		B262886415EC43DA00E2DC85 /* fb-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fb-button.png"; sourceTree = "<group>"; };
+		B262886515EC43DA00E2DC85 /* fb-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fb-button@2x.png"; sourceTree = "<group>"; };
+		B2C55ED415F936D30015E39F /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		B2C55EED15F950640015E39F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B2C55EEE15F950640015E39F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B2C55EEF15F950640015E39F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		B2C55EF015F950640015E39F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B2C55EF115F950640015E39F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B2C55EF215F950640015E39F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B2C55EF315F950640015E39F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +145,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C55F0715F95C880015E39F /* libRestKit.a in Frameworks */,
+				B2C55EFC15F9511F0015E39F /* CFNetwork.framework in Frameworks */,
+				B2C55EFD15F9511F0015E39F /* CoreData.framework in Frameworks */,
+				B2C55EFE15F9511F0015E39F /* libxml2.dylib in Frameworks */,
+				B2C55EFF15F9511F0015E39F /* MobileCoreServices.framework in Frameworks */,
+				B2C55F0015F9511F0015E39F /* QuartzCore.framework in Frameworks */,
+				B2C55F0115F9511F0015E39F /* Security.framework in Frameworks */,
+				B2C55F0215F9511F0015E39F /* SystemConfiguration.framework in Frameworks */,
 				B26287F015E40CED00E2DC85 /* UIKit.framework in Frameworks */,
 				B26287F215E40CED00E2DC85 /* Foundation.framework in Frameworks */,
 				B26287F415E40CED00E2DC85 /* CoreGraphics.framework in Frameworks */,
@@ -97,6 +176,7 @@
 		B26287E015E40CED00E2DC85 = {
 			isa = PBXGroup;
 			children = (
+				B2C55ED415F936D30015E39F /* RestKit.xcodeproj */,
 				B26287F515E40CED00E2DC85 /* friendscanme */,
 				B262881315E40CEE00E2DC85 /* friendscanmeTests */,
 				B26287EE15E40CED00E2DC85 /* Frameworks */,
@@ -116,6 +196,13 @@
 		B26287EE15E40CED00E2DC85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2C55EED15F950640015E39F /* CFNetwork.framework */,
+				B2C55EEE15F950640015E39F /* CoreData.framework */,
+				B2C55EEF15F950640015E39F /* libxml2.dylib */,
+				B2C55EF015F950640015E39F /* MobileCoreServices.framework */,
+				B2C55EF115F950640015E39F /* QuartzCore.framework */,
+				B2C55EF215F950640015E39F /* Security.framework */,
+				B2C55EF315F950640015E39F /* SystemConfiguration.framework */,
 				B262882615E40D7000E2DC85 /* FacebookSDKResources.bundle */,
 				B262882415E40D5100E2DC85 /* FacebookSDK.framework */,
 				B26287EF15E40CED00E2DC85 /* UIKit.framework */,
@@ -147,6 +234,12 @@
 		B26287F615E40CED00E2DC85 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B262886415EC43DA00E2DC85 /* fb-button.png */,
+				B262886515EC43DA00E2DC85 /* fb-button@2x.png */,
+				B262885C15E897FA00E2DC85 /* fsm-login-logo.png */,
+				B262885D15E897FA00E2DC85 /* fsm-login-logo@2x.png */,
+				B262885415E8931300E2DC85 /* fsm-bg.png */,
+				B262885515E8931300E2DC85 /* fsm-bg@2x.png */,
 				B262883015E45DFF00E2DC85 /* bg-starburst.png */,
 				B262883115E45DFF00E2DC85 /* bg-starburst@2x.png */,
 				B26287F715E40CED00E2DC85 /* friendscanme-Info.plist */,
@@ -176,6 +269,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B2C55ED515F936D30015E39F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2C55EE015F936D30015E39F /* libRestKit.a */,
+				B2C55EE215F936D30015E39F /* RestKitTests.octest */,
+				B2C55EE415F936D30015E39F /* RestKit.framework */,
+				B2C55EE615F936D30015E39F /* RestKitFrameworkTests.octest */,
+				B2C55EE815F936D30015E39F /* RestKitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,6 +295,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B2C55EEA15F94F970015E39F /* PBXTargetDependency */,
 			);
 			name = friendscanme;
 			productName = friendscanme;
@@ -235,6 +341,12 @@
 			mainGroup = B26287E015E40CED00E2DC85;
 			productRefGroup = B26287EC15E40CED00E2DC85 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B2C55ED515F936D30015E39F /* Products */;
+					ProjectRef = B2C55ED415F936D30015E39F /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B26287EA15E40CED00E2DC85 /* friendscanme */,
@@ -242,6 +354,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B2C55EE015F936D30015E39F /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = B2C55EDF15F936D30015E39F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B2C55EE215F936D30015E39F /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = B2C55EE115F936D30015E39F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B2C55EE415F936D30015E39F /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = B2C55EE315F936D30015E39F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B2C55EE615F936D30015E39F /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = B2C55EE515F936D30015E39F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B2C55EE815F936D30015E39F /* RestKitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitResources.bundle;
+			remoteRef = B2C55EE715F936D30015E39F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B26287E915E40CED00E2DC85 /* Resources */ = {
@@ -253,6 +403,12 @@
 				B262882715E40D7000E2DC85 /* FacebookSDKResources.bundle in Resources */,
 				B262883215E45DFF00E2DC85 /* bg-starburst.png in Resources */,
 				B262883315E45DFF00E2DC85 /* bg-starburst@2x.png in Resources */,
+				B262885615E8931300E2DC85 /* fsm-bg.png in Resources */,
+				B262885715E8931300E2DC85 /* fsm-bg@2x.png in Resources */,
+				B262885E15E897FA00E2DC85 /* fsm-login-logo.png in Resources */,
+				B262885F15E897FA00E2DC85 /* fsm-login-logo@2x.png in Resources */,
+				B262886615EC43DA00E2DC85 /* fb-button.png in Resources */,
+				B262886715EC43DA00E2DC85 /* fb-button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +446,7 @@
 				B26287FC15E40CED00E2DC85 /* main.m in Sources */,
 				B262880015E40CED00E2DC85 /* FSMAppDelegate.m in Sources */,
 				B262880615E40CED00E2DC85 /* FSMViewController.m in Sources */,
+				B262883B15E5ACD100E2DC85 /* FSMDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +456,7 @@
 			files = (
 				B262881B15E40CEE00E2DC85 /* friendscanmeTests.m in Sources */,
 				B262883915E4602500E2DC85 /* FSMUser.m in Sources */,
-				B262883A15E4602500E2DC85 /* FSMDetailViewController.m in Sources */,
+				B262883C15E5AD4E00E2DC85 /* FSMDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +467,11 @@
 			isa = PBXTargetDependency;
 			target = B26287EA15E40CED00E2DC85 /* friendscanme */;
 			targetProxy = B262881115E40CEE00E2DC85 /* PBXContainerItemProxy */;
+		};
+		B2C55EEA15F94F970015E39F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = B2C55EE915F94F970015E39F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,8 +555,13 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "friendscanme/friendscanme-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "friendscanme/friendscanme-Info.plist";
-				OTHER_LDFLAGS = "-lsqlite3.0";
+				OTHER_LDFLAGS = (
+					"-lsqlite3.0",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -409,8 +576,13 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "friendscanme/friendscanme-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "friendscanme/friendscanme-Info.plist";
-				OTHER_LDFLAGS = "-lsqlite3.0";
+				OTHER_LDFLAGS = (
+					"-lsqlite3.0",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -469,6 +641,7 @@
 				B262882015E40CEE00E2DC85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B262882115E40CEE00E2DC85 /* Build configuration list for PBXNativeTarget "friendscanmeTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +650,7 @@
 				B262882315E40CEE00E2DC85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

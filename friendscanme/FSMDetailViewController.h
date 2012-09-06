@@ -7,18 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <FacebookSDK/FacebookSDK.h>
-#import "FSMUser.h"
+
 
 @interface FSMDetailViewController : UIViewController
-
-
-//@property (retain, nonatomic) IBOutlet UIView *profilePictureOuterView;
-
-@property(nonatomic, strong) IBOutlet UILabel *userName;
-@property(nonatomic, strong) IBOutlet UILabel *userUrl;
-@property(nonatomic, strong) IBOutlet UIImageView *userQrCode;
-@property(retain, nonatomic) IBOutlet FBProfilePictureView *profilePictureView;
-@property(nonatomic, strong) FSMUser *user;
 
 @end

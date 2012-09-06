@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 Yeti Media. All rights reserved.
 //
 
+#import <RestKit/RestKit.h>
+
 #import "FSMAppDelegate.h"
 
 @implementation FSMAppDelegate
@@ -85,8 +87,9 @@ NSString *const FBSessionStateChangedNotification =
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    _window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg-starburst.png"]];
-    [FBProfilePictureView class];   
+    _window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fsm-bg.png"]];
+    [FBProfilePictureView class];
+    [RKClient clientWithBaseURLString:@"http://restkit.org"];
     return YES;
 }
 							

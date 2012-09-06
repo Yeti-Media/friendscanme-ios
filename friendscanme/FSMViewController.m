@@ -54,21 +54,19 @@
     [appDelegate openSessionWithAllowLoginUI:YES];
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    if (FBSession.activeSession.isOpen) {
+        [self performSegueWithIdentifier:@"validSession" sender:self];
+    }
+}
+
 - (void)sessionStateChanged:(NSNotification*)notification {
     if (FBSession.activeSession.isOpen) {
         self.buttonLogin.hidden = true;
-        [FBRequestConnection
-         startForMeWithCompletionHandler:^(FBRequestConnection *connection,
-                                           id<FBGraphUser> user,
-                                           NSError *error) {
-            
-            if(!error){
-                //_profilePictureView.profileID = user.id;
-                NSLog(@"%@", user.name); 
-            }
-        }];
+        [self performSegueWithIdentifier:@"validSession" sender:self];
     } else {
-        //[self.authButton setTitle:@"Login" forState:UIControlStateNormal];
+        self.buttonLogin.hidden = false;
     }
 }
 

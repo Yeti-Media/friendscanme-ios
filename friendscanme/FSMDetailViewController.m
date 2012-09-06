@@ -8,8 +8,15 @@
 #import <QuartzCore/QuartzCore.h>
 #import "FSMDetailViewController.h"
 #import "FSMAppDelegate.h"
+#import "FSMUser.h"
 
 @interface FSMDetailViewController ()
+
+@property(nonatomic, strong) IBOutlet UILabel *userName;
+@property(nonatomic, strong) IBOutlet UILabel *userUrl;
+@property(nonatomic, strong) IBOutlet UIImageView *userQrCode;
+@property(retain, nonatomic) IBOutlet FBProfilePictureView *profilePictureView;
+@property(nonatomic, strong) FSMUser *user;
 
 @end
 
@@ -33,27 +40,26 @@
 
 - (void)viewDidLoad
 {
+    
+    
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor clearColor];
-    
-     FSMAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-//    
-    if (appDelegate.session.isOpen) {
-        NSLog(@"your super fucked"); 
-    [[FBRequest requestForMe] startWithCompletionHandler:^(FBRequestConnection *connection,
-                                       NSDictionary<FBGraphUser> *user,
-                                       NSError *error) {
-     
-     
-         if(!error){
-             _profilePictureView.profileID = user.id;
-            NSLog(@"%@", user.id); 
-         }
-     }];
+    if (FBSession.activeSession.isOpen) {
+        [FBRequestConnection
+         startForMeWithCompletionHandler:^(FBRequestConnection *connection,
+                                           id<FBGraphUser> user,
+                                           NSError *error) {
+             
+             if(!error){
+                 _profilePictureView.profileID = user.id;
+                 self.userName.text =  user.name;
+             }
+         }];
     } else {
-        NSLog(@"your fucked"); 
+        [self performSegueWithIdentifier:@"validSession" sender:self];
     }
-        
+    
+            
 }
 
 - (void)viewDidUnload
