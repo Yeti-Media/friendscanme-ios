@@ -89,7 +89,6 @@ NSString *const FBSessionStateChangedNotification =
 {
     _window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fsm-bg.png"]];
     [FBProfilePictureView class];
-    [RKClient clientWithBaseURLString:@"http://restkit.org"];
     return YES;
 }
 							

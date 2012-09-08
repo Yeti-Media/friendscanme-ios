@@ -11,4 +11,6 @@
 
 @interface FSMDetailViewController : UIViewController
 
+-(void)storeFBToken:(NSString *)token name:(NSString *)name;
+
 @end

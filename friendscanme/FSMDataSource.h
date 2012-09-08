@@ -12,4 +12,6 @@
 
 @protocol FSMDataSource <NSObject>
 
+-(void) intitalizeRequest;
+
 @end

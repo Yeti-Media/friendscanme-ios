@@ -11,8 +11,9 @@
 @interface FSMUser : NSObject
 
 @property(nonatomic, copy) NSString *name;
-@property(nonatomic, strong) UIImage *qrcode;
-@property(nonatomic, strong) UIImage *thumb;
+@property(nonatomic, copy) NSString *fbID;
+@property(nonatomic, copy) NSString *qrcode;
 @property(nonatomic, copy) NSString *url;
+@property(nonatomic, copy) NSString *fsmID;
 
 @end

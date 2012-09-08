@@ -5,10 +5,10 @@
 //  Created by Nick Treadway on 8/16/12.
 //  Copyright (c) 2012 Yeti Media. All rights reserved.
 //
-#import <QuartzCore/QuartzCore.h>
 #import "FSMDetailViewController.h"
 #import "FSMAppDelegate.h"
 #import "FSMUser.h"
+#import "FSMUsersSource.h"
 
 @interface FSMDetailViewController ()
 
@@ -16,13 +16,11 @@
 @property(nonatomic, strong) IBOutlet UILabel *userUrl;
 @property(nonatomic, strong) IBOutlet UIImageView *userQrCode;
 @property(retain, nonatomic) IBOutlet FBProfilePictureView *profilePictureView;
-@property(nonatomic, strong) FSMUser *user;
 
 @end
 
 @implementation FSMDetailViewController
 
-@synthesize user = _user;
 @synthesize userName = _userName;
 @synthesize userUrl = _userUrl;
 @synthesize userQrCode = _userQrCode;
@@ -53,19 +51,20 @@
              if(!error){
                  _profilePictureView.profileID = user.id;
                  self.userName.text =  user.name;
+                 [self storeFBToken:user.id name:user.name];
              }
          }];
     } else {
         [self performSegueWithIdentifier:@"validSession" sender:self];
     }
-    
-            
+          
 }
+
+
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    self.user = nil;
     self.userName = nil;
     self.userUrl = nil;
     self.userQrCode = nil;
@@ -75,6 +74,14 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(void)storeFBToken:(NSString *)token name:(NSString *)name {
+    FSMUser *user = [[FSMUser alloc] init];
+    user.fbID = token;
+    user.name = name;
+    FSMUsersSource *userSource = [[FSMUsersSource alloc] init];
+    [userSource sendRequest:user.fbID facebookName:user.name];
 }
 
 @end

@@ -41,6 +41,8 @@
 		B2C55F0115F9511F0015E39F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C55EF215F950640015E39F /* Security.framework */; };
 		B2C55F0215F9511F0015E39F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C55EF315F950640015E39F /* SystemConfiguration.framework */; };
 		B2C55F0715F95C880015E39F /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C55EE015F936D30015E39F /* libRestKit.a */; };
+		B2C55F0E15F95FAC0015E39F /* FSMUsersSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C55F0D15F95FAC0015E39F /* FSMUsersSource.m */; };
+		B2C55F1315FA7A490015E39F /* FSMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B262883515E4602400E2DC85 /* FSMUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +140,8 @@
 		B2C55EF115F950640015E39F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B2C55EF215F950640015E39F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B2C55EF315F950640015E39F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B2C55F0C15F95FAC0015E39F /* FSMUsersSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMUsersSource.h; sourceTree = "<group>"; };
+		B2C55F0D15F95FAC0015E39F /* FSMUsersSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMUsersSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +223,8 @@
 				B262883415E4602400E2DC85 /* FSMUser.h */,
 				B262883515E4602400E2DC85 /* FSMUser.m */,
 				B262883615E4602400E2DC85 /* FSMDataSource.h */,
+				B2C55F0C15F95FAC0015E39F /* FSMUsersSource.h */,
+				B2C55F0D15F95FAC0015E39F /* FSMUsersSource.m */,
 				B262883715E4602400E2DC85 /* FSMDetailViewController.h */,
 				B262883815E4602400E2DC85 /* FSMDetailViewController.m */,
 				B26287FE15E40CED00E2DC85 /* FSMAppDelegate.h */,
@@ -443,10 +449,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C55F1315FA7A490015E39F /* FSMUser.m in Sources */,
 				B26287FC15E40CED00E2DC85 /* main.m in Sources */,
 				B262880015E40CED00E2DC85 /* FSMAppDelegate.m in Sources */,
 				B262880615E40CED00E2DC85 /* FSMViewController.m in Sources */,
 				B262883B15E5ACD100E2DC85 /* FSMDetailViewController.m in Sources */,
+				B2C55F0E15F95FAC0015E39F /* FSMUsersSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

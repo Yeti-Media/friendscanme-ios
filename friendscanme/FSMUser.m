@@ -13,14 +13,17 @@
 @synthesize name = _name;
 @synthesize url = _url;
 @synthesize qrcode = _qrcode;
-@synthesize thumb = _thumb;
+@synthesize fbID = _fbID;
+@synthesize fsmID = _fsmID;
 
 
 - (id)init {
     self = [super init];
     if (self) {
         self.name = @"Yeti";
-        self.url = @"http:://friendscan.me";
+        self.url = @"http://friendscan.me";
+        self.fbID = @"123456";
+        
     }
     return self;
 }
