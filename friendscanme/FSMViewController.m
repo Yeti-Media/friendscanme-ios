@@ -57,6 +57,7 @@
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     if (FBSession.activeSession.isOpen) {
+        sleep(1.0);
         [self performSegueWithIdentifier:@"validSession" sender:self];
     }
 }
@@ -64,7 +65,6 @@
 - (void)sessionStateChanged:(NSNotification*)notification {
     if (FBSession.activeSession.isOpen) {
         self.buttonLogin.hidden = true;
-        sleep(5.0);
         [self performSegueWithIdentifier:@"validSession" sender:self];
     } else {
         self.buttonLogin.hidden = false;
