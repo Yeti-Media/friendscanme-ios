@@ -7,6 +7,7 @@
 //
 
 #import <RestKit/RestKit.h>
+#import "FSMDataSource.h"
 
 @interface FSMUsersSource : NSObject <RKObjectLoaderDelegate>
 

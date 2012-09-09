@@ -43,6 +43,8 @@
 		B2C55F0715F95C880015E39F /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C55EE015F936D30015E39F /* libRestKit.a */; };
 		B2C55F0E15F95FAC0015E39F /* FSMUsersSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C55F0D15F95FAC0015E39F /* FSMUsersSource.m */; };
 		B2C55F1315FA7A490015E39F /* FSMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B262883515E4602400E2DC85 /* FSMUser.m */; };
+		B2C55F1615FD4D5A0015E39F /* card.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C55F1415FD4D5A0015E39F /* card.png */; };
+		B2C55F1715FD4D5A0015E39F /* card@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C55F1515FD4D5A0015E39F /* card@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +144,8 @@
 		B2C55EF315F950640015E39F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B2C55F0C15F95FAC0015E39F /* FSMUsersSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMUsersSource.h; sourceTree = "<group>"; };
 		B2C55F0D15F95FAC0015E39F /* FSMUsersSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMUsersSource.m; sourceTree = "<group>"; };
+		B2C55F1415FD4D5A0015E39F /* card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card.png; sourceTree = "<group>"; };
+		B2C55F1515FD4D5A0015E39F /* card@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +244,8 @@
 		B26287F615E40CED00E2DC85 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2C55F1415FD4D5A0015E39F /* card.png */,
+				B2C55F1515FD4D5A0015E39F /* card@2x.png */,
 				B262886415EC43DA00E2DC85 /* fb-button.png */,
 				B262886515EC43DA00E2DC85 /* fb-button@2x.png */,
 				B262885C15E897FA00E2DC85 /* fsm-login-logo.png */,
@@ -415,6 +421,8 @@
 				B262885F15E897FA00E2DC85 /* fsm-login-logo@2x.png in Resources */,
 				B262886615EC43DA00E2DC85 /* fb-button.png in Resources */,
 				B262886715EC43DA00E2DC85 /* fb-button@2x.png in Resources */,
+				B2C55F1615FD4D5A0015E39F /* card.png in Resources */,
+				B2C55F1715FD4D5A0015E39F /* card@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

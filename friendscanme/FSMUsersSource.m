@@ -49,6 +49,8 @@
 - (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects {
     FSMUser *card = [objects objectAtIndex:0];
     NSLog(@"Loaded Contact ID #%@ -> Name: %@, Code: %@", card.fsmID, card.name, card.qrcode);
+    self.FSMtoken = nil;
+    [self autorelease];
 }
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error

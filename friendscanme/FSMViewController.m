@@ -64,6 +64,7 @@
 - (void)sessionStateChanged:(NSNotification*)notification {
     if (FBSession.activeSession.isOpen) {
         self.buttonLogin.hidden = true;
+        sleep(5.0);
         [self performSegueWithIdentifier:@"validSession" sender:self];
     } else {
         self.buttonLogin.hidden = false;
