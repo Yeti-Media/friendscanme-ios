@@ -7,10 +7,11 @@
 //
 
 #import <RestKit/RestKit.h>
-#import "FSMDataSource.h"
+#import "FSMDetailViewController.h"
 
 @interface FSMUsersSource : NSObject <RKObjectLoaderDelegate>
 
+- (id)initWithFSMDetailViewController:(FSMDetailViewController*)vc;
 - (void)sendRequest:(NSString *)facebookID facebookName:(NSString *)name;
 
 @end

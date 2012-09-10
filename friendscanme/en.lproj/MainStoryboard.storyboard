@@ -93,6 +93,7 @@ into a digital business card.</string>
                     <connections>
                         <outlet property="profilePictureView" destination="cxi-lm-2Uv" id="DIv-sz-lK5"/>
                         <outlet property="userName" destination="jCZ-Nt-Qq0" id="0tw-XY-sM6"/>
+                        <outlet property="userQrCode" destination="CFA-Qs-HzR" id="T7A-x4-Ym6"/>
                     </connections>
                 </viewController>
             </objects>

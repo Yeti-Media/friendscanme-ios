@@ -21,37 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "friendscanme/FSMUsersSource.m"
-         timestampString = "368829915.696642"
+         timestampString = "368998141.649963"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "28"
-         endingLineNumber = "28"
-         landmarkName = "-sendRequest:facebookName:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "friendscanme/FSMUsersSource.h"
-         timestampString = "368832258.600411"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "14"
-         endingLineNumber = "14"
-         landmarkName = "-sendRequest:facebookName:"
-         landmarkType = "4">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "friendscanme/FSMUsersSource.m"
-         timestampString = "368829915.696642"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "38"
-         endingLineNumber = "38"
+         startingLineNumber = "41"
+         endingLineNumber = "41"
          landmarkName = "-sendRequest:facebookName:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -60,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "friendscanme/FSMUsersSource.m"
-         timestampString = "368829915.696642"
+         timestampString = "368998141.649963"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "39"
-         endingLineNumber = "39"
+         startingLineNumber = "51"
+         endingLineNumber = "51"
          landmarkName = "-sendRequest:facebookName:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -73,13 +47,39 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "friendscanme/FSMUsersSource.m"
-         timestampString = "368830637.109925"
+         timestampString = "368998141.649963"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "18"
-         endingLineNumber = "18"
+         startingLineNumber = "52"
+         endingLineNumber = "52"
+         landmarkName = "-sendRequest:facebookName:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "friendscanme/FSMUsersSource.m"
+         timestampString = "368995930.980012"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "20"
+         endingLineNumber = "20"
          landmarkName = "@implementation FSMUsersSource"
          landmarkType = "3">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "friendscanme/FSMUsersSource.m"
+         timestampString = "369006608.554483"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "77"
+         endingLineNumber = "77"
+         landmarkName = "-loadQRcode:"
+         landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

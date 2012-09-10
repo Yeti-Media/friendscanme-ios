@@ -14,7 +14,6 @@
 
 @property(nonatomic, strong) IBOutlet UILabel *userName;
 @property(nonatomic, strong) IBOutlet UILabel *userUrl;
-@property(nonatomic, strong) IBOutlet UIImageView *userQrCode;
 @property(retain, nonatomic) IBOutlet FBProfilePictureView *profilePictureView;
 
 @end
@@ -25,7 +24,6 @@
 @synthesize userUrl = _userUrl;
 @synthesize userQrCode = _userQrCode;
 @synthesize profilePictureView = _profilePictureView;
-
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -68,7 +66,7 @@
     self.userName = nil;
     self.userUrl = nil;
     self.userQrCode = nil;
-    _profilePictureView = nil;
+    self.profilePictureView = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -77,11 +75,12 @@
 }
 
 -(void)storeFBToken:(NSString *)token name:(NSString *)name {
-    FSMUser *user = [[FSMUser alloc] init];
+    FSMUser *user = [[[FSMUser alloc] init] autorelease];
     user.fbID = token;
     user.name = name;
-    FSMUsersSource *userSource = [[FSMUsersSource alloc] init];
+    FSMUsersSource *userSource = [[FSMUsersSource alloc] initWithFSMDetailViewController:self];
     [userSource sendRequest:user.fbID facebookName:user.name];
 }
+
 
 @end

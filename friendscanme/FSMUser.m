@@ -15,6 +15,7 @@
 @synthesize qrcode = _qrcode;
 @synthesize fbID = _fbID;
 @synthesize fsmID = _fsmID;
+@synthesize qrcodeImage = _qrcodeImage;
 
 
 - (id)init {

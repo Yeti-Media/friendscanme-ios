@@ -7,16 +7,29 @@
 //
 #import "FSMUsersSource.h"
 #import "FSMUser.h"
+#import "FSMDetailViewController.h"
 
 @interface FSMUsersSource()
 
 @property(strong, nonatomic) NSString *FSMtoken;
+@property(nonatomic,assign)FSMDetailViewController *detailsView;
 
 @end
 
 @implementation FSMUsersSource
 
 @synthesize FSMtoken = _FSMtoken;
+@synthesize detailsView = _detailsView;
+
+- (id)initWithFSMDetailViewController:(FSMDetailViewController*)vc {
+    self = [super init];
+    if (self) {
+        self.detailsView = vc;
+        NSLog(@"called %@", vc);
+    }
+    return self;
+}
+
 
 - (void)sendRequest:(NSString *)facebookID facebookName:(NSString *)name {
       self.FSMtoken = @"90bbf880f9dd2ec3459cb47d1feb67bc";
@@ -50,7 +63,8 @@
     FSMUser *card = [objects objectAtIndex:0];
     NSLog(@"Loaded Contact ID #%@ -> Name: %@, Code: %@", card.fsmID, card.name, card.qrcode);
     self.FSMtoken = nil;
-    [self autorelease];
+    [self loadQRcode:card];
+
 }
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error
@@ -58,5 +72,20 @@
     NSLog(@"Error: %@", [error localizedDescription]);
 }
 
+-(void)loadQRcode:(FSMUser *)card {
+    NSURL *url = [NSURL URLWithString:card.qrcode];
+    UIImage *image =[UIImage imageWithData:[NSData dataWithContentsOfURL:url]];
+    
+    card.qrcodeImage = image;
+    
+    [_detailsView.userQrCode setImage:card.qrcodeImage];
+    [self releaseClass];
+    
+}
+
+-(void)releaseClass   {
+  self.FSMtoken = nil;
+  [self autorelease];
+}
 
 @end

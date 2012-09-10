@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface FSMDetailViewController : UIViewController
+
+@property(nonatomic, retain) IBOutlet UIImageView *userQrCode;
 
 -(void)storeFBToken:(NSString *)token name:(NSString *)name;
 

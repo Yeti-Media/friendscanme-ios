@@ -15,5 +15,6 @@
 @property(nonatomic, copy) NSString *qrcode;
 @property(nonatomic, copy) NSString *url;
 @property(nonatomic, copy) NSString *fsmID;
+@property(nonatomic, retain) UIImage *qrcodeImage;
 
 @end

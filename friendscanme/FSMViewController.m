@@ -40,6 +40,7 @@
 {
     [super viewDidUnload];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    self.buttonLogin = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

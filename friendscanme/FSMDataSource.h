@@ -12,6 +12,6 @@
 
 @protocol FSMDataSource <NSObject>
 
--(void) intitalizeRequest;
+- (FSMUser *)userAtIndex:(NSInteger)index;
 
 @end
