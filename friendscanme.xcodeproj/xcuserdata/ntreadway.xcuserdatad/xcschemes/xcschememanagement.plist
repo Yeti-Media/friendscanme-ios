@@ -4,10 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Generate Seed Database.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>friendscanme.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>seed data.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>B262880B15E40CEE00E2DC85</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B2C55F2B15FEA6DA0015E39F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B2C55F3215FEA7A90015E39F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

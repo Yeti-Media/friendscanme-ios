@@ -7,9 +7,14 @@
 //
 
 #import <RestKit/RestKit.h>
+#import <RestKit/CoreData.h>
 #import "FSMDetailViewController.h"
 
-@interface FSMUsersSource : NSObject <RKObjectLoaderDelegate>
+@interface FSMUsersSource : NSObject <RKObjectLoaderDelegate> {
+
+    NSArray *_card;
+
+}
 
 - (id)initWithFSMDetailViewController:(FSMDetailViewController*)vc;
 - (void)sendRequest:(NSString *)facebookID facebookName:(NSString *)name;

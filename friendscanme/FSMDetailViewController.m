@@ -7,7 +7,7 @@
 //
 #import "FSMDetailViewController.h"
 #import "FSMAppDelegate.h"
-#import "FSMUser.h"
+//#import "FSMUser.h"
 #import "FSMUsersSource.h"
 
 @interface FSMDetailViewController ()
@@ -75,11 +75,8 @@
 }
 
 -(void)storeFBToken:(NSString *)token name:(NSString *)name {
-    FSMUser *user = [[[FSMUser alloc] init] autorelease];
-    user.fbID = token;
-    user.name = name;
     FSMUsersSource *userSource = [[FSMUsersSource alloc] initWithFSMDetailViewController:self];
-    [userSource sendRequest:user.fbID facebookName:user.name];
+    [userSource sendRequest:token facebookName:name];
 }
 
 

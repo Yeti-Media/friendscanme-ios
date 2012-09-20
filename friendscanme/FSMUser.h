@@ -6,15 +6,15 @@
 //  Copyright (c) 2012 Yeti Media. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <RestKit/RestKit.h>
+#import <RestKit/CoreData.h>
 
-@interface FSMUser : NSObject
+@interface FSMUser : NSManagedObject {
+    
+}
 
-@property(nonatomic, copy) NSString *name;
-@property(nonatomic, copy) NSString *fbID;
-@property(nonatomic, copy) NSString *qrcode;
-@property(nonatomic, copy) NSString *url;
-@property(nonatomic, copy) NSString *fsmID;
-@property(nonatomic, retain) UIImage *qrcodeImage;
+@property (nonatomic, retain) NSString *user_id;
+@property (nonatomic, retain) NSString *qr_code;
+@property (nonatomic, retain) NSString *status;
 
 @end

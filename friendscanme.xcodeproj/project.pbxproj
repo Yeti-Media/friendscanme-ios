@@ -45,6 +45,7 @@
 		B2C55F1315FA7A490015E39F /* FSMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B262883515E4602400E2DC85 /* FSMUser.m */; };
 		B2C55F1615FD4D5A0015E39F /* card.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C55F1415FD4D5A0015E39F /* card.png */; };
 		B2C55F1715FD4D5A0015E39F /* card@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C55F1515FD4D5A0015E39F /* card@2x.png */; };
+		B2C55F4D15FEAEC60015E39F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2C55F4B15FEAEC60015E39F /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,7 +126,6 @@
 		B262883115E45DFF00E2DC85 /* bg-starburst@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-starburst@2x.png"; sourceTree = "<group>"; };
 		B262883415E4602400E2DC85 /* FSMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMUser.h; sourceTree = "<group>"; };
 		B262883515E4602400E2DC85 /* FSMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMUser.m; sourceTree = "<group>"; };
-		B262883615E4602400E2DC85 /* FSMDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMDataSource.h; sourceTree = "<group>"; };
 		B262883715E4602400E2DC85 /* FSMDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMDetailViewController.h; sourceTree = "<group>"; };
 		B262883815E4602400E2DC85 /* FSMDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMDetailViewController.m; sourceTree = "<group>"; };
 		B262885415E8931300E2DC85 /* fsm-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fsm-bg.png"; sourceTree = "<group>"; };
@@ -146,6 +146,14 @@
 		B2C55F0D15F95FAC0015E39F /* FSMUsersSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMUsersSource.m; sourceTree = "<group>"; };
 		B2C55F1415FD4D5A0015E39F /* card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card.png; sourceTree = "<group>"; };
 		B2C55F1515FD4D5A0015E39F /* card@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card@2x.png"; sourceTree = "<group>"; };
+		B2C55F3B15FEA7A90015E39F /* seed data-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "seed data-Info.plist"; sourceTree = "<group>"; };
+		B2C55F3D15FEA7A90015E39F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B2C55F3F15FEA7A90015E39F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B2C55F4115FEA7A90015E39F /* seed data-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "seed data-Prefix.pch"; sourceTree = "<group>"; };
+		B2C55F4215FEA7A90015E39F /* FSMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSMAppDelegate.h; sourceTree = "<group>"; };
+		B2C55F4315FEA7A90015E39F /* FSMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSMAppDelegate.m; sourceTree = "<group>"; };
+		B2C55F4615FEA7A90015E39F /* seed_data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = seed_data.xcdatamodel; sourceTree = "<group>"; };
+		B2C55F4C15FEAEC60015E39F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +195,7 @@
 				B2C55ED415F936D30015E39F /* RestKit.xcodeproj */,
 				B26287F515E40CED00E2DC85 /* friendscanme */,
 				B262881315E40CEE00E2DC85 /* friendscanmeTests */,
+				B2C55F3915FEA7A90015E39F /* seed data */,
 				B26287EE15E40CED00E2DC85 /* Frameworks */,
 				B26287EC15E40CED00E2DC85 /* Products */,
 			);
@@ -226,7 +235,6 @@
 			children = (
 				B262883415E4602400E2DC85 /* FSMUser.h */,
 				B262883515E4602400E2DC85 /* FSMUser.m */,
-				B262883615E4602400E2DC85 /* FSMDataSource.h */,
 				B2C55F0C15F95FAC0015E39F /* FSMUsersSource.h */,
 				B2C55F0D15F95FAC0015E39F /* FSMUsersSource.m */,
 				B262883715E4602400E2DC85 /* FSMDetailViewController.h */,
@@ -258,6 +266,7 @@
 				B26287F815E40CED00E2DC85 /* InfoPlist.strings */,
 				B26287FB15E40CED00E2DC85 /* main.m */,
 				B26287FD15E40CED00E2DC85 /* friendscanme-Prefix.pch */,
+				B2C55F4B15FEAEC60015E39F /* Model.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -291,6 +300,28 @@
 				B2C55EE815F936D30015E39F /* RestKitResources.bundle */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B2C55F3915FEA7A90015E39F /* seed data */ = {
+			isa = PBXGroup;
+			children = (
+				B2C55F4215FEA7A90015E39F /* FSMAppDelegate.h */,
+				B2C55F4315FEA7A90015E39F /* FSMAppDelegate.m */,
+				B2C55F4515FEA7A90015E39F /* seed_data.xcdatamodeld */,
+				B2C55F3A15FEA7A90015E39F /* Supporting Files */,
+			);
+			path = "seed data";
+			sourceTree = "<group>";
+		};
+		B2C55F3A15FEA7A90015E39F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2C55F3B15FEA7A90015E39F /* seed data-Info.plist */,
+				B2C55F3C15FEA7A90015E39F /* InfoPlist.strings */,
+				B2C55F3F15FEA7A90015E39F /* main.m */,
+				B2C55F4115FEA7A90015E39F /* seed data-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,6 +494,7 @@
 				B262880615E40CED00E2DC85 /* FSMViewController.m in Sources */,
 				B262883B15E5ACD100E2DC85 /* FSMDetailViewController.m in Sources */,
 				B2C55F0E15F95FAC0015E39F /* FSMUsersSource.m in Sources */,
+				B2C55F4D15FEAEC60015E39F /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +544,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				B262881715E40CEE00E2DC85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B2C55F3C15FEA7A90015E39F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2C55F3D15FEA7A90015E39F /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -669,6 +709,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B2C55F4515FEA7A90015E39F /* seed_data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B2C55F4615FEA7A90015E39F /* seed_data.xcdatamodel */,
+			);
+			currentVersion = B2C55F4615FEA7A90015E39F /* seed_data.xcdatamodel */;
+			path = seed_data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		B2C55F4B15FEAEC60015E39F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B2C55F4C15FEAEC60015E39F /* Model.xcdatamodel */,
+			);
+			currentVersion = B2C55F4C15FEAEC60015E39F /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B26287E215E40CED00E2DC85 /* Project object */;
 }

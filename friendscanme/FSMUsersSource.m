@@ -25,44 +25,65 @@
     self = [super init];
     if (self) {
         self.detailsView = vc;
-        NSLog(@"called %@", vc);
     }
     return self;
 }
 
 
 - (void)sendRequest:(NSString *)facebookID facebookName:(NSString *)name {
-      self.FSMtoken = @"90bbf880f9dd2ec3459cb47d1feb67bc";
-      RKURL *baseURL = [RKURL URLWithBaseURLString:@"http://my.local:3000/api/v1"];
-      RKObjectManager *objectManager = [RKObjectManager objectManagerWithBaseURL:baseURL];
-      objectManager.client.baseURL = baseURL;
-      [[objectManager client] setValue:self.FSMtoken forHTTPHeaderField:@"X-Access-Token"];
-   
     
+    self.FSMtoken = @"90bbf880f9dd2ec3459cb47d1feb67bc";
+    RKURL *baseURL = [RKURL URLWithBaseURLString:@"http://my.local:3000/api/v1"];
     NSDictionary* params = [NSDictionary dictionaryWithObjectsAndKeys:
-                            @"facebook", @"auth[provider]",
-                            facebookID, @"auth[uid]",
-                            name, @"auth[info][name]",
-                            nil];
+                              @"facebook", @"auth[provider]",
+                              facebookID, @"auth[uid]",
+                              name, @"auth[info][name]",
+                              nil];
     
-    [[RKObjectManager sharedManager] loadObjectsAtResourcePath:@"/authentication" usingBlock:^(RKObjectLoader* loader) {
-        loader.method = RKRequestMethodPOST;
-        loader.params = params;
-        loader.delegate = self;
-        loader.objectMapping = [RKObjectMapping mappingForClass:[FSMUser class] usingBlock:^(RKObjectMapping *mapping)
-                                {
-                                  [mapping mapKeyPath:@"user_id" toAttribute:@"fsmID"];
-                                  [mapping mapKeyPath:@"qr_code" toAttribute:@"qrcode"];
-                                }];
-    }];
+    
 
+    
+    RKObjectManager* objectManager =[RKObjectManager objectManagerWithBaseURL:baseURL];
+    [RKObjectManager setSharedManager:objectManager];
+    objectManager.client.baseURL = baseURL;
+    [[objectManager client] setValue:self.FSMtoken forHTTPHeaderField:@"X-Access-Token"];
+    
+    RKManagedObjectStore* objectStore = [RKManagedObjectStore objectStoreWithStoreFilename:@"FSM.sqlite"];
+    objectManager.objectStore = objectStore;
+    RKManagedObjectMapping *mapper = [RKManagedObjectMapping mappingForClass:[FSMUser class] inManagedObjectStore:objectManager.objectStore];
+    [mapper mapKeyPath:@"user_id" toAttribute:@"user_id"];
+    [mapper mapKeyPath:@"qr_code" toAttribute:@"qr_code"];
+    [mapper mapKeyPath:@"status" toAttribute:@"status"];
+    
+    [self fetchObject];
+    
+    FSMUser *card = nil;
+
+    if (![_card count]==0) {
+        card = [_card objectAtIndex:0];
+    }
+    
+    if (!card.user_id) {
+        [objectManager loadObjectsAtResourcePath:@"/authentication"usingBlock:^(RKObjectLoader* loader) {
+            loader.method = RKRequestMethodPOST;
+            loader.params = params;
+            loader.delegate = self;
+            loader.objectMapping = mapper;
+            }
+         ];
+    
+    } else {
+        [self loadQRcode:card];
+    }
+
+    
 }
 
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects {
-    FSMUser *card = [objects objectAtIndex:0];
-    NSLog(@"Loaded Contact ID #%@ -> Name: %@, Code: %@", card.fsmID, card.name, card.qrcode);
-    self.FSMtoken = nil;
+    
+    [self fetchObject];
+    FSMUser *card = [_card objectAtIndex:0];
     [self loadQRcode:card];
 
 }
@@ -72,20 +93,28 @@
     NSLog(@"Error: %@", [error localizedDescription]);
 }
 
--(void)loadQRcode:(FSMUser *)card {
-    NSURL *url = [NSURL URLWithString:card.qrcode];
+- (void)loadQRcode:(FSMUser *)card {
+    
+    NSURL *url = [NSURL URLWithString:card.qr_code];
     UIImage *image =[UIImage imageWithData:[NSData dataWithContentsOfURL:url]];
     
-    card.qrcodeImage = image;
-    
-    [_detailsView.userQrCode setImage:card.qrcodeImage];
+    [_detailsView.userQrCode setImage:image];
     [self releaseClass];
     
 }
 
--(void)releaseClass   {
+- (void)releaseClass   {
   self.FSMtoken = nil;
   [self autorelease];
+  [_card release];
+}
+
+- (id)fetchObject {
+    
+    [_card release];
+    NSFetchRequest *request = [FSMUser fetchRequest];
+    _card = [[FSMUser objectsWithFetchRequest:request] retain];
+    return _card;
 }
 
 @end
