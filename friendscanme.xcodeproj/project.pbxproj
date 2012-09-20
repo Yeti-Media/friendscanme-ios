@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B259A8AA160B913B00145299 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = B259A8A8160B913B00145299 /* loading.png */; };
+		B259A8AB160B913B00145299 /* loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B259A8A9160B913B00145299 /* loading@2x.png */; };
+		B259A8AD160B917900145299 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B259A8AC160B917900145299 /* logo.png */; };
+		B259A8AF160B9DD200145299 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B259A8AE160B9DD200145299 /* Default-568h@2x.png */; };
+		B259A8B1160BA18100145299 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B259A8B0160BA18100145299 /* Default@2x.png */; };
+		B259A8B3160BA18500145299 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B259A8B2160BA18500145299 /* Default.png */; };
+		B259A8B5160BA43300145299 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B259A8B4160BA43300145299 /* logo@2x.png */; };
 		B26287F015E40CED00E2DC85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26287EF15E40CED00E2DC85 /* UIKit.framework */; };
 		B26287F215E40CED00E2DC85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26287F115E40CED00E2DC85 /* Foundation.framework */; };
 		B26287F415E40CED00E2DC85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26287F315E40CED00E2DC85 /* CoreGraphics.framework */; };
@@ -101,6 +108,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B259A8A8160B913B00145299 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
+		B259A8A9160B913B00145299 /* loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading@2x.png"; sourceTree = "<group>"; };
+		B259A8AC160B917900145299 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../logo.png; sourceTree = "<group>"; };
+		B259A8AE160B9DD200145299 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		B259A8B0160BA18100145299 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		B259A8B2160BA18500145299 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		B259A8B4160BA43300145299 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "../logo@2x.png"; sourceTree = "<group>"; };
 		B26287EB15E40CED00E2DC85 /* friendscanme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = friendscanme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26287EF15E40CED00E2DC85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B26287F115E40CED00E2DC85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -252,6 +266,13 @@
 		B26287F615E40CED00E2DC85 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B259A8B4160BA43300145299 /* logo@2x.png */,
+				B259A8B2160BA18500145299 /* Default.png */,
+				B259A8B0160BA18100145299 /* Default@2x.png */,
+				B259A8AE160B9DD200145299 /* Default-568h@2x.png */,
+				B259A8AC160B917900145299 /* logo.png */,
+				B259A8A8160B913B00145299 /* loading.png */,
+				B259A8A9160B913B00145299 /* loading@2x.png */,
 				B2C55F1415FD4D5A0015E39F /* card.png */,
 				B2C55F1515FD4D5A0015E39F /* card@2x.png */,
 				B262886415EC43DA00E2DC85 /* fb-button.png */,
@@ -454,6 +475,13 @@
 				B262886715EC43DA00E2DC85 /* fb-button@2x.png in Resources */,
 				B2C55F1615FD4D5A0015E39F /* card.png in Resources */,
 				B2C55F1715FD4D5A0015E39F /* card@2x.png in Resources */,
+				B259A8AA160B913B00145299 /* loading.png in Resources */,
+				B259A8AB160B913B00145299 /* loading@2x.png in Resources */,
+				B259A8AD160B917900145299 /* logo.png in Resources */,
+				B259A8AF160B9DD200145299 /* Default-568h@2x.png in Resources */,
+				B259A8B1160BA18100145299 /* Default@2x.png in Resources */,
+				B259A8B3160BA18500145299 /* Default.png in Resources */,
+				B259A8B5160BA43300145299 /* logo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

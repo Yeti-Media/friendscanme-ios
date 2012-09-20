@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="FSMViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
@@ -51,13 +49,13 @@ into a digital business card.</string>
                         <segue destination="MZe-6K-KTD" kind="modal" identifier="validSession" modalTransitionStyle="flipHorizontal" id="iuF-Wp-vjL"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="108" y="115"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="u3b-V3-ZHs">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kd4-HF-Bp0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="MZe-6K-KTD" customClass="FSMDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vZ2-Ce-Cde">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
@@ -79,7 +77,7 @@ into a digital business card.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="center" id="CFA-Qs-HzR">
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="loading.png" id="CFA-Qs-HzR">
                                 <rect key="frame" x="70" y="228" width="183" height="183"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -96,6 +94,7 @@ into a digital business card.</string>
                         <outlet property="userQrCode" destination="CFA-Qs-HzR" id="T7A-x4-Ym6"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kd4-HF-Bp0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="563" y="115"/>
         </scene>
@@ -104,6 +103,7 @@ into a digital business card.</string>
         <image name="card.png" width="241" height="371"/>
         <image name="fb-button.png" width="217" height="35"/>
         <image name="fsm-login-logo.png" width="235" height="42"/>
+        <image name="loading.png" width="183" height="183"/>
     </resources>
     <classes>
         <class className="FBProfilePictureView" superclassName="UIView">
