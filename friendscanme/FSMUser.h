@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 Yeti Media. All rights reserved.
 //
 
-#import <RestKit/RestKit.h>
 #import <RestKit/CoreData.h>
 
 @interface FSMUser : NSManagedObject {

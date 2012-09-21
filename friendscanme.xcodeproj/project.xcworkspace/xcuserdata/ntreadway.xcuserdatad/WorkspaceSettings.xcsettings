@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildLocationStyle</key>
-	<string>UniqueDerivedDataSubfolder</string>
+	<string>UseAppPreferences</string>
 	<key>CustomBuildIntermediatesPath</key>
 	<string>Build/Intermediates</string>
 	<key>CustomBuildLocationType</key>
@@ -12,6 +12,8 @@
 	<string>Build/Products</string>
 	<key>DerivedDataLocationStyle</key>
 	<string>Default</string>
+	<key>HasAskedToTakeAutomaticSnapshotBeforeSignificantChanges</key>
+	<true/>
 	<key>IssueFilterStyle</key>
 	<string>ShowActiveSchemeOnly</string>
 	<key>LiveSourceIssuesEnabled</key>

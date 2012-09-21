@@ -33,7 +33,7 @@
 - (void)sendRequest:(NSString *)facebookID facebookName:(NSString *)name {
     
     self.FSMtoken = @"90bbf880f9dd2ec3459cb47d1feb67bc";
-    RKURL *baseURL = [RKURL URLWithBaseURLString:@"http://my.local:3000/api/v1"];
+    RKURL *baseURL = [RKURL URLWithBaseURLString:@"http://friendscan.me/api/v1"];
     NSDictionary* params = [NSDictionary dictionaryWithObjectsAndKeys:
                               @"facebook", @"auth[provider]",
                               facebookID, @"auth[uid]",

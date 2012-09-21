@@ -77,9 +77,9 @@ into a digital business card.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="loading.png" id="CFA-Qs-HzR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="loading.png" id="CFA-Qs-HzR">
                                 <rect key="frame" x="70" y="228" width="183" height="183"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fsm-login-logo.png" id="I3C-xj-Aup">
                                 <rect key="frame" x="43" y="24" width="235" height="42"/>
