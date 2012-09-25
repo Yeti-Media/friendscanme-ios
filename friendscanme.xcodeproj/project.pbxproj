@@ -29,8 +29,6 @@
 		B262881B15E40CEE00E2DC85 /* friendscanmeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B262881A15E40CEE00E2DC85 /* friendscanmeTests.m */; };
 		B262882515E40D5100E2DC85 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B262882415E40D5100E2DC85 /* FacebookSDK.framework */; };
 		B262882715E40D7000E2DC85 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B262882615E40D7000E2DC85 /* FacebookSDKResources.bundle */; };
-		B262883215E45DFF00E2DC85 /* bg-starburst.png in Resources */ = {isa = PBXBuildFile; fileRef = B262883015E45DFF00E2DC85 /* bg-starburst.png */; };
-		B262883315E45DFF00E2DC85 /* bg-starburst@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B262883115E45DFF00E2DC85 /* bg-starburst@2x.png */; };
 		B262883915E4602500E2DC85 /* FSMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B262883515E4602400E2DC85 /* FSMUser.m */; };
 		B262883B15E5ACD100E2DC85 /* FSMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B262883815E4602400E2DC85 /* FSMDetailViewController.m */; };
 		B262883C15E5AD4E00E2DC85 /* FSMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B262883815E4602400E2DC85 /* FSMDetailViewController.m */; };
@@ -136,8 +134,6 @@
 		B262881A15E40CEE00E2DC85 /* friendscanmeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = friendscanmeTests.m; sourceTree = "<group>"; };
 		B262882415E40D5100E2DC85 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		B262882615E40D7000E2DC85 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
-		B262883015E45DFF00E2DC85 /* bg-starburst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-starburst.png"; sourceTree = "<group>"; };
-		B262883115E45DFF00E2DC85 /* bg-starburst@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-starburst@2x.png"; sourceTree = "<group>"; };
 		B262883415E4602400E2DC85 /* FSMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMUser.h; sourceTree = "<group>"; };
 		B262883515E4602400E2DC85 /* FSMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMUser.m; sourceTree = "<group>"; };
 		B262883715E4602400E2DC85 /* FSMDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMDetailViewController.h; sourceTree = "<group>"; };
@@ -281,8 +277,6 @@
 				B262885D15E897FA00E2DC85 /* fsm-login-logo@2x.png */,
 				B262885415E8931300E2DC85 /* fsm-bg.png */,
 				B262885515E8931300E2DC85 /* fsm-bg@2x.png */,
-				B262883015E45DFF00E2DC85 /* bg-starburst.png */,
-				B262883115E45DFF00E2DC85 /* bg-starburst@2x.png */,
 				B26287F715E40CED00E2DC85 /* friendscanme-Info.plist */,
 				B26287F815E40CED00E2DC85 /* InfoPlist.strings */,
 				B26287FB15E40CED00E2DC85 /* main.m */,
@@ -465,8 +459,6 @@
 				B26287FA15E40CED00E2DC85 /* InfoPlist.strings in Resources */,
 				B262880315E40CED00E2DC85 /* MainStoryboard.storyboard in Resources */,
 				B262882715E40D7000E2DC85 /* FacebookSDKResources.bundle in Resources */,
-				B262883215E45DFF00E2DC85 /* bg-starburst.png in Resources */,
-				B262883315E45DFF00E2DC85 /* bg-starburst@2x.png in Resources */,
 				B262885615E8931300E2DC85 /* fsm-bg.png in Resources */,
 				B262885715E8931300E2DC85 /* fsm-bg@2x.png in Resources */,
 				B262885E15E897FA00E2DC85 /* fsm-login-logo.png in Resources */,
@@ -606,7 +598,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -623,7 +615,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -633,6 +625,8 @@
 		B262881F15E40CEE00E2DC85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -641,13 +635,14 @@
 				GCC_PREFIX_HEADER = "friendscanme/friendscanme-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "friendscanme/friendscanme-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-lsqlite3.0",
 					"-ObjC",
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -656,6 +651,8 @@
 		B262882015E40CEE00E2DC85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Richard Treadway";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -664,13 +661,14 @@
 				GCC_PREFIX_HEADER = "friendscanme/friendscanme-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "friendscanme/friendscanme-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-lsqlite3.0",
 					"-ObjC",
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};

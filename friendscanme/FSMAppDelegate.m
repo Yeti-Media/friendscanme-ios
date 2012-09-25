@@ -53,12 +53,13 @@ NSString *const FBSessionStateChangedNotification =
      object:session];
     
     if (error) {
-        UIAlertView *alertView = [[UIAlertView alloc]
+        UIAlertView *alertView = [[[UIAlertView alloc]
                                   initWithTitle:@"Error"
                                   message:error.localizedDescription
                                   delegate:nil
                                   cancelButtonTitle:@"OK"
-                                  otherButtonTitles:nil];
+                                  otherButtonTitles:nil
+                                  ]autorelease];
         [alertView show];
     }
 }

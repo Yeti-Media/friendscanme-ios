@@ -24,16 +24,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	[[NSNotificationCenter defaultCenter]
-     addObserver:self
-     selector:@selector(sessionStateChanged:)
-     name:FBSessionStateChangedNotification
-     object:nil];
+
     
     FSMAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     [appDelegate openSessionWithAllowLoginUI:NO];
     
     self.view.backgroundColor = [UIColor clearColor];
+    
+    if (FBSession.activeSession.isOpen) {
+        self.buttonLogin.hidden = true;
+    } else {
+        self.buttonLogin.hidden = false;
+    }
 }
 
 - (void)viewDidUnload
@@ -57,8 +59,15 @@
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(sessionStateChanged:)
+     name:FBSessionStateChangedNotification
+     object:nil];
+    
     if (FBSession.activeSession.isOpen) {
         sleep(1.0);
+        
         [self performSegueWithIdentifier:@"validSession" sender:self];
     }
 }
